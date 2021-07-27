@@ -1,0 +1,180 @@
+{
+	"info": {
+		"_postman_id": "c296bcd2-355c-4252-aaca-3242479f2ea1",
+		"name": "ISS ",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get Satellites",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {}
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.wheretheiss.at/v1/satellites",
+					"protocol": "https",
+					"host": [
+						"api",
+						"wheretheiss",
+						"at"
+					],
+					"path": [
+						"v1",
+						"satellites"
+					]
+				},
+				"description": "https://api.wheretheiss.at/v1/satellites"
+			},
+			"response": []
+		},
+		{
+			"name": "Get Satelite By ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.wheretheiss.at/v1/satellites/25544",
+					"protocol": "https",
+					"host": [
+						"api",
+						"wheretheiss",
+						"at"
+					],
+					"path": [
+						"v1",
+						"satellites",
+						"25544"
+					]
+				},
+				"description": "https://api.wheretheiss.at/v1/satellites"
+			},
+			"response": []
+		},
+		{
+			"name": "satellites/[id]/positions",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://api.wheretheiss.at/v1/satellites/25544/positions?timestamps=1648670400000,1743364800000&units=miles",
+					"protocol": "https",
+					"host": [
+						"api",
+						"wheretheiss",
+						"at"
+					],
+					"path": [
+						"v1",
+						"satellites",
+						"25544",
+						"positions"
+					],
+					"query": [
+						{
+							"key": "timestamps",
+							"value": "1648670400000,1743364800000"
+						},
+						{
+							"key": "units",
+							"value": "miles"
+						}
+					]
+				},
+				"description": "https://api.wheretheiss.at/v1/satellites"
+			},
+			"response": []
+		},
+		{
+			"name": "satellites/[id]/positions KM",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.wheretheiss.at/v1/satellites/25544/positions?timestamps=1614542400000,1614715200000&units=kilometers",
+					"protocol": "https",
+					"host": [
+						"api",
+						"wheretheiss",
+						"at"
+					],
+					"path": [
+						"v1",
+						"satellites",
+						"25544",
+						"positions"
+					],
+					"query": [
+						{
+							"key": "timestamps",
+							"value": "1614542400000,1614715200000"
+						},
+						{
+							"key": "units",
+							"value": "kilometers"
+						}
+					]
+				},
+				"description": "https://api.wheretheiss.at/v1/satellites"
+			},
+			"response": []
+		},
+		{
+			"name": "satellites/[id]/tles",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.wheretheiss.at/v1/satellites/25544/tles",
+					"protocol": "https",
+					"host": [
+						"api",
+						"wheretheiss",
+						"at"
+					],
+					"path": [
+						"v1",
+						"satellites",
+						"25544",
+						"tles"
+					]
+				},
+				"description": "https://api.wheretheiss.at/v1/satellites"
+			},
+			"response": []
+		},
+		{
+			"name": "coordinates/[lat,lon]",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.wheretheiss.at/v1/coordinates/37.795517,-122.393693",
+					"protocol": "https",
+					"host": [
+						"api",
+						"wheretheiss",
+						"at"
+					],
+					"path": [
+						"v1",
+						"coordinates",
+						"37.795517,-122.393693"
+					]
+				},
+				"description": "https://api.wheretheiss.at/v1/satellites"
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}

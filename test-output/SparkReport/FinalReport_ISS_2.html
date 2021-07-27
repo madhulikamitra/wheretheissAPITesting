@@ -1,0 +1,1902 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title></title>
+<link rel="apple-touch-icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@c43b89d03a7c43dae8bb8f0f078bad1997af6b3b/spark/css/spark-style.css" rel="stylesheet" />
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<script src="https://cdn.rawgit.com/extent-framework/extent-github-cdn/7cc78ce/spark/js/jsontree.js"></script>
+<style type="text/css"></style></head><body class="spa bdd-report standard">
+  <div class="app">
+    <div class="layout">
+<div class="header navbar">
+<div class="vheader">
+<div class="nav-logo">
+<a href="#">
+<div class="logo" style="background-image: url('https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png')"></div>
+</a>
+</div>
+<ul class="nav-left">
+<li class="search-box">
+<a class="search-toggle" href="#">
+<i class="search-icon fa fa-search"></i>
+<i class="search-icon-close fa fa-close"></i>
+</a>
+</li>
+<li class="search-input"><input id="search-tests" class="form-control" type="text" placeholder="Search..."></li>
+</ul>
+<ul class="nav-right">
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary"></span></a>
+</li>
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">Jul 27, 2021 11:55:01 AM</span></a>
+</li>
+</ul>
+</div>
+</div><div class="side-nav">
+<div class="side-nav-inner">
+<ul class="side-nav-menu">
+<li class="nav-item dropdown" onclick="toggleView('test-view')">
+<a id="nav-test" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-list"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('exception-view')">
+<a id="nav-exception" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bug"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('category-view')">
+<a id="nav-category" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-tag"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('dashboard-view')">
+<a id="nav-dashboard" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bar-chart"></i></span>
+</a>
+</li>
+</ul>
+</div>
+</div>      <div class="vcontainer">
+        <div class="main-content">
+<div class="test-wrapper row view test-view">
+  <div class="test-list">
+    <div class="test-list-tools">
+<ul class="tools pull-left">
+<li><a href="#"><span class="font-size-14">Tests</span></a></li>
+</ul>
+<ul class="tools text-right">
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
+<ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" status="pass" href="#"><span>Pass</span><span class="status success"></span></a>
+<a class="dropdown-item" status="fail" href="#"><span>Fail</span><span class="status danger"></span></a>
+<div class="dropdown-divider"></div>
+<a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
+</ul>
+</li>
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-tag"></i></a>
+<ul id="tag-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" href="#">@Regression</a>
+</ul>
+</li>
+</ul>
+</div>    <div class="test-list-wrapper scrollable">
+      <ul class="test-list-item">
+        <li class="test-item"  status="pass" test-id="1"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">To perform health check of the application</p>
+            <p class="text-sm">
+              <span>11:55:02 AM</span> / <span>00:00:03:193</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">To perform health check of the application</h5>
+<span class='badge badge-success'>07.27.2021 11:55:02</span>
+<span class='badge badge-danger'>07.27.2021 11:55:05</span>
+<span class='badge badge-default'>00:00:03:193</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="2"><span class="badge log pass-bg mr-2">Pass</span>To perform health check of the application</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.automation.iss.glues.stepBuilder.stepDefinitions.setUp()">
+                <span>When Test environment is set</span>
+      <div>Base URi https://api.wheretheiss.at/v1/
+      </div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automation.iss.glues.stepBuilder.stepDefinitions.validateHealthOfApp(java.util.Map<java.lang.String, java.lang.String>)">
+                <span>And check if health ping is successful</span>
+      <div><table class='markup-table table '><tr><td>path</td><td>/satellites</td></tr><tr><td>HEADER-Content-Type</td><td>application/json</td></tr><tr><td>HEADER-Accept</td><td>application/json</td></tr><tr><td>httpCode</td><td>200</td></tr></table>
+      </div>
+      <div>EndPoint /satellites
+      </div>
+      <div>Response [{"name":"iss","id":25544}]
+      </div>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="9"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">To validate Get satellite details for a specific satellite ID</p>
+            <p class="text-sm">
+              <span>11:55:05 AM</span> / <span>00:00:02:640</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">To validate Get satellite details for a specific satellite ID</h5>
+<span class='badge badge-success'>07.27.2021 11:55:05</span>
+<span class='badge badge-danger'>07.27.2021 11:55:08</span>
+<span class='badge badge-default'>00:00:02:640</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=9</span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="10"><span class="badge log pass-bg mr-2">Pass</span>To validate if we can get specific satellite details by ID and also its schema is validated</div>
+      </div>
+    </div>
+        <div class="scenario_outline collapse">
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="11"><span class="badge log pass-bg mr-2">Pass</span>To validate if we can get specific satellite details by ID and also its schema is validated</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>When Test environment is set</span>
+      <div>Base URi https://api.wheretheiss.at/v1/
+      </div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And check if health ping is successful</span>
+      <div><table class='markup-table table '><tr><td>path</td><td>/satellites</td></tr><tr><td>HEADER-Content-Type</td><td>application/json</td></tr><tr><td>HEADER-Accept</td><td>application/json</td></tr><tr><td>httpCode</td><td>200</td></tr></table>
+      </div>
+      <div>EndPoint /satellites
+      </div>
+      <div>Response [{"name":"iss","id":25544}]
+      </div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then check if satellites are returned specific to ID supplied</span>
+      <div><table class='markup-table table '><tr><td>path</td><td>/satellites/{ID}</td></tr><tr><td>HEADER-Content-Type</td><td>application/json</td></tr><tr><td>HEADER-Accept</td><td>application/json</td></tr><tr><td>httpCode</td><td>200</td></tr><tr><td>pathParam</td><td>ID</td></tr><tr><td>ID</td><td>25544</td></tr></table>
+      </div>
+      <div>EndPoint /satellites/{ID}
+      </div>
+      <div>Response {"name":"iss","id":25544,"latitude":-51.10163764727,"longitude":-22.532605253931,"altitude":437.06843749954,"velocity":27538.757765729,"visibility":"daylight","footprint":4593.3001766383,"timestamp":1627372507,"daynum":2459422.8299421,"solar_lat":19.128488510456,"solar_lon":62.861993456347,"units":"kilometers"}
+      </div>
+      <div>name iss
+      </div>
+      <div>Id 25544
+      </div>
+      <div>latitude -51.10163764727
+      </div>
+      <div>longitude -22.532605253931
+      </div>
+      <div>altitude437.06843749954
+      </div>
+      <div>velocity27538.757765729
+      </div>
+      <div>visibility daylight
+      </div>
+      <div>footprint4593.3001766383
+      </div>
+      <div>timestamp1627372507
+      </div>
+      <div>daynum 2459422.8299421
+      </div>
+      <div>solar_lat19.128488510456
+      </div>
+      <div>solar_lon62.861993456347
+      </div>
+      <div>units kilometers
+      </div>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="34"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">To validate Get satellite position  details for a specific satellite ID</p>
+            <p class="text-sm">
+              <span>11:55:08 AM</span> / <span>00:00:16:347</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">To validate Get satellite position details for a specific satellite ID</h5>
+<span class='badge badge-success'>07.27.2021 11:55:08</span>
+<span class='badge badge-danger'>07.27.2021 11:55:24</span>
+<span class='badge badge-default'>00:00:16:347</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=34</span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="35"><span class="badge log fail-bg mr-2">Fail</span>To validate if we can get specific satellite position details by timestamps and units and also its schema is validated</div>
+      </div>
+    </div>
+        <div class="scenario_outline ">
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="36"><span class="badge log fail-bg mr-2">Fail</span>To validate if we can get specific satellite position details by timestamps and units and also its schema is validated</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 ">
+                  <div class="step pass-bg">
+                    <span>When Test environment is set</span>
+      <div>Base URi https://api.wheretheiss.at/v1/
+      </div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And check if health ping is successful</span>
+      <div><table class='markup-table table '><tr><td>path</td><td>/satellites</td></tr><tr><td>HEADER-Content-Type</td><td>application/json</td></tr><tr><td>HEADER-Accept</td><td>application/json</td></tr><tr><td>httpCode</td><td>200</td></tr></table>
+      </div>
+      <div>EndPoint /satellites
+      </div>
+      <div>Response [{"name":"iss","id":25544}]
+      </div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step fail-bg">
+                    <span>Then check if satellites are returned based on units and timestamps</span>
+      <div><table class='markup-table table '><tr><td>path</td><td>/satellites/{ID}/positions</td></tr><tr><td>HEADER-Content-Type</td><td>application/json</td></tr><tr><td>HEADER-Accept</td><td>application/json</td></tr><tr><td>httpCode</td><td>200</td></tr><tr><td>pathParam</td><td>ID</td></tr><tr><td>ID</td><td>25544</td></tr><tr><td>timestamps</td><td>1627322480,1627328617</td></tr><tr><td>units</td><td>miles</td></tr><tr><td>ErrorScenario</td><td>false</td></tr><tr><td>ErrorMessage</td><td></td></tr></table>
+      </div>
+      <div>Setting query paramerters {timestamps=1627322480,1627328617, units=miles}
+      </div>
+      <div>EndPoint /satellites/{ID}/positions
+      </div>
+      <div>Response [{"name":"iss","id":25544,"latitude":-51.779069761066,"longitude":-155.81477376394,"altitude":271.85005032674,"velocity":17111.050857394,"visibility":"daylight","footprint":2855.4774866663,"timestamp":1627322480,"daynum":2459422.2509259,"solar_lat":19.259631402309,"solar_lon":271.30938910764,"units":"miles"},{"name":"iss","id":25544,"latitude":-38.596283506728,"longitude":-132.81776217437,"altitude":268.85716427559,"velocity":17116.481719725,"visibility":"daylight","footprint":2840.5590532006,"timestamp":1627328617,"daynum":2459422.321956,"solar_lat":19.243639000763,"solar_lon":245.73840978827,"units":"miles"}]
+      </div>
+      <div>Timestamp matched from filter and response for : 1627322480
+      </div>
+      <div>Timestamp matched from filter and response for : 1627328617
+      </div>
+      <div>Total Satellites found 2
+      </div>
+      <div>name iss
+      </div>
+      <div>Id 25544
+      </div>
+      <div>latitude -51.779068
+      </div>
+      <div>longitude -155.81477
+      </div>
+      <div>altitude271.85004
+      </div>
+      <div>velocity17111.05
+      </div>
+      <div>
+        <textarea disabled class="code-block">java.lang.AssertionError: velocity is not correct
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at com.automation.iss.glues.stepBuilder.stepDefinitions.validateAllSatelliteData(stepDefinitions.java:97)
+	at com.automation.iss.glues.stepBuilder.stepDefinitions.validateMultipleSatellites(stepDefinitions.java:76)
+	at com.automation.iss.glues.stepBuilder.stepDefinitions.getSatellitesByFilter(stepDefinitions.java:175)
+	at ✽.check if satellites are returned based on units and timestamps(file:///Users/mitramac/AssignmentGITRepoISS/wheretheissAPITesting/src/test/resources/features/2_GETSatelliteByPositions.feature:16)
+</textarea>
+      
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="56"><span class="badge log pass-bg mr-2">Pass</span>To validate if we can get specific satellite position details by timestamps and units and also its schema is validated</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>When Test environment is set</span>
+      <div>Base URi https://api.wheretheiss.at/v1/
+      </div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And check if health ping is successful</span>
+      <div><table class='markup-table table '><tr><td>path</td><td>/satellites</td></tr><tr><td>HEADER-Content-Type</td><td>application/json</td></tr><tr><td>HEADER-Accept</td><td>application/json</td></tr><tr><td>httpCode</td><td>200</td></tr></table>
+      </div>
+      <div>EndPoint /satellites
+      </div>
+      <div>Response [{"name":"iss","id":25544}]
+      </div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then check if satellites are returned based on units and timestamps</span>
+      <div><table class='markup-table table '><tr><td>path</td><td>/satellites/{ID}/positions</td></tr><tr><td>HEADER-Content-Type</td><td>application/json</td></tr><tr><td>HEADER-Accept</td><td>application/json</td></tr><tr><td>httpCode</td><td>200</td></tr><tr><td>pathParam</td><td>ID</td></tr><tr><td>ID</td><td>25544</td></tr><tr><td>timestamps</td><td>1627322480,1627328617</td></tr><tr><td>units</td><td>kilometers</td></tr><tr><td>ErrorScenario</td><td>false</td></tr><tr><td>ErrorMessage</td><td></td></tr></table>
+      </div>
+      <div>Setting query paramerters {timestamps=1627322480,1627328617, units=kilometers}
+      </div>
+      <div>EndPoint /satellites/{ID}/positions
+      </div>
+      <div>Response [{"name":"iss","id":25544,"latitude":-51.779069761066,"longitude":-155.81477376394,"altitude":437.50038274515,"velocity":27537.575550507,"visibility":"daylight","footprint":4595.4469820225,"timestamp":1627322480,"daynum":2459422.2509259,"solar_lat":19.259631402309,"solar_lon":271.30938910764,"units":"kilometers"},{"name":"iss","id":25544,"latitude":-38.596283506728,"longitude":-132.81776217437,"altitude":432.68379804592,"velocity":27546.315678918,"visibility":"daylight","footprint":4571.4380832073,"timestamp":1627328617,"daynum":2459422.321956,"solar_lat":19.243639000763,"solar_lon":245.73840978827,"units":"kilometers"}]
+      </div>
+      <div>Timestamp matched from filter and response for : 1627322480
+      </div>
+      <div>Timestamp matched from filter and response for : 1627328617
+      </div>
+      <div>Total Satellites found 2
+      </div>
+      <div>name iss
+      </div>
+      <div>Id 25544
+      </div>
+      <div>latitude -51.779068
+      </div>
+      <div>longitude -155.81477
+      </div>
+      <div>altitude437.5004
+      </div>
+      <div>velocity27537.576
+      </div>
+      <div>visibility daylight
+      </div>
+      <div>footprint4595.447
+      </div>
+      <div>timestamp1627322480
+      </div>
+      <div>daynum 2459422.2
+      </div>
+      <div>solar_lat19.259632
+      </div>
+      <div>solar_lon271.3094
+      </div>
+      <div>units kilometers
+      </div>
+      <div>name iss
+      </div>
+      <div>Id 25544
+      </div>
+      <div>latitude -38.596283
+      </div>
+      <div>longitude -132.81776
+      </div>
+      <div>altitude432.6838
+      </div>
+      <div>velocity27546.316
+      </div>
+      <div>visibility daylight
+      </div>
+      <div>footprint4571.438
+      </div>
+      <div>timestamp1627328617
+      </div>
+      <div>daynum 2459422.2
+      </div>
+      <div>solar_lat19.243639
+      </div>
+      <div>solar_lon245.7384
+      </div>
+      <div>units kilometers
+      </div>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="96"><span class="badge log pass-bg mr-2">Pass</span>To validate if we can get specific satellite position details by timestamps and units and also its schema is validated</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>When Test environment is set</span>
+      <div>Base URi https://api.wheretheiss.at/v1/
+      </div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And check if health ping is successful</span>
+      <div><table class='markup-table table '><tr><td>path</td><td>/satellites</td></tr><tr><td>HEADER-Content-Type</td><td>application/json</td></tr><tr><td>HEADER-Accept</td><td>application/json</td></tr><tr><td>httpCode</td><td>200</td></tr></table>
+      </div>
+      <div>EndPoint /satellites
+      </div>
+      <div>Response [{"name":"iss","id":25544}]
+      </div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then check if satellites are returned based on units and timestamps</span>
+      <div><table class='markup-table table '><tr><td>path</td><td>/satellites/{ID}/positions</td></tr><tr><td>HEADER-Content-Type</td><td>application/json</td></tr><tr><td>HEADER-Accept</td><td>application/json</td></tr><tr><td>httpCode</td><td>200</td></tr><tr><td>pathParam</td><td>ID</td></tr><tr><td>ID</td><td>25544</td></tr><tr><td>timestamps</td><td>1648670400000,1743364800000</td></tr><tr><td>units</td><td></td></tr><tr><td>ErrorScenario</td><td>false</td></tr><tr><td>ErrorMessage</td><td></td></tr></table>
+      </div>
+      <div>Setting query paramerters {timestamps=1648670400000,1743364800000}
+      </div>
+      <div>EndPoint /satellites/{ID}/positions
+      </div>
+      <div>Response [{"name":"iss","id":25544,"latitude":-12.000889492491,"longitude":-25.230958677047,"altitude":422.28170560864,"velocity":27572.248779549,"visibility":"eclipsed","footprint":4519.0535854834,"timestamp":1648670400000,"daynum":21522420.833333,"solar_lat":60.826076379523,"solar_lon":95.709731578828,"units":"kilometers"},{"name":"iss","id":25544,"latitude":0.97004586765308,"longitude":148.06364535021,"altitude":419.85679965456,"velocity":27580.061973977,"visibility":"eclipsed","footprint":4506.7348497156,"timestamp":1743364800000,"daynum":22618420.833333,"solar_lat":44.867165108666,"solar_lon":346.53947741274,"units":"kilometers"}]
+      </div>
+      <div>Timestamp matched from filter and response for : 1648670400000
+      </div>
+      <div>Timestamp matched from filter and response for : 1743364800000
+      </div>
+      <div>Total Satellites found 2
+      </div>
+      <div>name iss
+      </div>
+      <div>Id 25544
+      </div>
+      <div>latitude -12.00089
+      </div>
+      <div>longitude -25.230959
+      </div>
+      <div>altitude422.2817
+      </div>
+      <div>velocity27572.248
+      </div>
+      <div>visibility eclipsed
+      </div>
+      <div>footprint4519.0537
+      </div>
+      <div>timestamp1648670400000
+      </div>
+      <div>daynum 2.152242E7
+      </div>
+      <div>solar_lat60.826077
+      </div>
+      <div>solar_lon95.70973
+      </div>
+      <div>units kilometers
+      </div>
+      <div>name iss
+      </div>
+      <div>Id 25544
+      </div>
+      <div>latitude 0.97004586
+      </div>
+      <div>longitude 148.06364
+      </div>
+      <div>altitude419.8568
+      </div>
+      <div>velocity27580.062
+      </div>
+      <div>visibility eclipsed
+      </div>
+      <div>footprint4506.735
+      </div>
+      <div>timestamp1743364800000
+      </div>
+      <div>daynum 2.261842E7
+      </div>
+      <div>solar_lat44.867165
+      </div>
+      <div>solar_lon346.5395
+      </div>
+      <div>units kilometers
+      </div>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="136"><span class="badge log pass-bg mr-2">Pass</span>To validate if we can get specific satellite position details by timestamps and units and also its schema is validated</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>When Test environment is set</span>
+      <div>Base URi https://api.wheretheiss.at/v1/
+      </div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And check if health ping is successful</span>
+      <div><table class='markup-table table '><tr><td>path</td><td>/satellites</td></tr><tr><td>HEADER-Content-Type</td><td>application/json</td></tr><tr><td>HEADER-Accept</td><td>application/json</td></tr><tr><td>httpCode</td><td>200</td></tr></table>
+      </div>
+      <div>EndPoint /satellites
+      </div>
+      <div>Response [{"name":"iss","id":25544}]
+      </div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then check if satellites are returned based on units and timestamps</span>
+      <div><table class='markup-table table '><tr><td>path</td><td>/satellites/{ID}/positions</td></tr><tr><td>HEADER-Content-Type</td><td>application/json</td></tr><tr><td>HEADER-Accept</td><td>application/json</td></tr><tr><td>httpCode</td><td>200</td></tr><tr><td>pathParam</td><td>ID</td></tr><tr><td>ID</td><td>25544</td></tr><tr><td>timestamps</td><td>1627322480,1627328617</td></tr><tr><td>units</td><td></td></tr><tr><td>ErrorScenario</td><td>false</td></tr><tr><td>ErrorMessage</td><td></td></tr></table>
+      </div>
+      <div>Setting query paramerters {timestamps=1627322480,1627328617}
+      </div>
+      <div>EndPoint /satellites/{ID}/positions
+      </div>
+      <div>Response [{"name":"iss","id":25544,"latitude":-51.779069761066,"longitude":-155.81477376394,"altitude":437.50038274515,"velocity":27537.575550507,"visibility":"daylight","footprint":4595.4469820225,"timestamp":1627322480,"daynum":2459422.2509259,"solar_lat":19.259631402309,"solar_lon":271.30938910764,"units":"kilometers"},{"name":"iss","id":25544,"latitude":-38.596283506728,"longitude":-132.81776217437,"altitude":432.68379804592,"velocity":27546.315678918,"visibility":"daylight","footprint":4571.4380832073,"timestamp":1627328617,"daynum":2459422.321956,"solar_lat":19.243639000763,"solar_lon":245.73840978827,"units":"kilometers"}]
+      </div>
+      <div>Timestamp matched from filter and response for : 1627322480
+      </div>
+      <div>Timestamp matched from filter and response for : 1627328617
+      </div>
+      <div>Total Satellites found 2
+      </div>
+      <div>name iss
+      </div>
+      <div>Id 25544
+      </div>
+      <div>latitude -51.779068
+      </div>
+      <div>longitude -155.81477
+      </div>
+      <div>altitude437.5004
+      </div>
+      <div>velocity27537.576
+      </div>
+      <div>visibility daylight
+      </div>
+      <div>footprint4595.447
+      </div>
+      <div>timestamp1627322480
+      </div>
+      <div>daynum 2459422.2
+      </div>
+      <div>solar_lat19.259632
+      </div>
+      <div>solar_lon271.3094
+      </div>
+      <div>units kilometers
+      </div>
+      <div>name iss
+      </div>
+      <div>Id 25544
+      </div>
+      <div>latitude -38.596283
+      </div>
+      <div>longitude -132.81776
+      </div>
+      <div>altitude432.6838
+      </div>
+      <div>velocity27546.316
+      </div>
+      <div>visibility daylight
+      </div>
+      <div>footprint4571.438
+      </div>
+      <div>timestamp1627328617
+      </div>
+      <div>daynum 2459422.2
+      </div>
+      <div>solar_lat19.243639
+      </div>
+      <div>solar_lon245.7384
+      </div>
+      <div>units kilometers
+      </div>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="176"><span class="badge log pass-bg mr-2">Pass</span>To validate if we can get specific satellite position details by timestamps and units and also its schema is validated</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>When Test environment is set</span>
+      <div>Base URi https://api.wheretheiss.at/v1/
+      </div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And check if health ping is successful</span>
+      <div><table class='markup-table table '><tr><td>path</td><td>/satellites</td></tr><tr><td>HEADER-Content-Type</td><td>application/json</td></tr><tr><td>HEADER-Accept</td><td>application/json</td></tr><tr><td>httpCode</td><td>200</td></tr></table>
+      </div>
+      <div>EndPoint /satellites
+      </div>
+      <div>Response [{"name":"iss","id":25544}]
+      </div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then check if satellites are returned based on units and timestamps</span>
+      <div><table class='markup-table table '><tr><td>path</td><td>/satellites/{ID}/positions</td></tr><tr><td>HEADER-Content-Type</td><td>application/json</td></tr><tr><td>HEADER-Accept</td><td>application/json</td></tr><tr><td>httpCode</td><td>200</td></tr><tr><td>pathParam</td><td>ID</td></tr><tr><td>ID</td><td>25544</td></tr><tr><td>timestamps</td><td></td></tr><tr><td>units</td><td>miles</td></tr><tr><td>ErrorScenario</td><td>true</td></tr><tr><td>ErrorMessage</td><td>invalid timestamp in list:</td></tr></table>
+      </div>
+      <div>Setting query paramerters {units=miles}
+      </div>
+      <div>EndPoint /satellites/{ID}/positions
+      </div>
+      <div>Response {"error":"invalid timestamp in list: ","status":400}
+      </div>
+      <div>Faliure scenario handled 
+      </div>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="188"><span class="badge log pass-bg mr-2">Pass</span>To validate if we can get specific satellite position details by timestamps and units and also its schema is validated</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>When Test environment is set</span>
+      <div>Base URi https://api.wheretheiss.at/v1/
+      </div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And check if health ping is successful</span>
+      <div><table class='markup-table table '><tr><td>path</td><td>/satellites</td></tr><tr><td>HEADER-Content-Type</td><td>application/json</td></tr><tr><td>HEADER-Accept</td><td>application/json</td></tr><tr><td>httpCode</td><td>200</td></tr></table>
+      </div>
+      <div>EndPoint /satellites
+      </div>
+      <div>Response [{"name":"iss","id":25544}]
+      </div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then check if satellites are returned based on units and timestamps</span>
+      <div><table class='markup-table table '><tr><td>path</td><td>/satellites/{ID}/positions</td></tr><tr><td>HEADER-Content-Type</td><td>application/json</td></tr><tr><td>HEADER-Accept</td><td>application/json</td></tr><tr><td>httpCode</td><td>200</td></tr><tr><td>pathParam</td><td>ID</td></tr><tr><td>ID</td><td>25544</td></tr><tr><td>timestamps</td><td>1617134400000,1617220800000,1617307200000,1617393600000,1617480000000,1617566400000,1617652800000,1617739200000,1617825600000,1617912000000,1617998400000</td></tr><tr><td>units</td><td></td></tr><tr><td>ErrorScenario</td><td>false</td></tr><tr><td>ErrorMessage</td><td></td></tr></table>
+      </div>
+      <div>Setting query paramerters {timestamps=1617134400000,1617220800000,1617307200000,1617393600000,1617480000000,1617566400000,1617652800000,1617739200000,1617825600000,1617912000000,1617998400000}
+      </div>
+      <div>EndPoint /satellites/{ID}/positions
+      </div>
+      <div>Response [{"name":"iss","id":25544,"latitude":-4.0289967386629,"longitude":-36.597760279317,"altitude":420.35028500061,"velocity":27578.278305024,"visibility":"daylight","footprint":4509.245124216,"timestamp":1617134400000,"daynum":21157420.833333,"solar_lat":-6.7127078924327,"solar_lon":43.338456888447,"units":"kilometers"},{"name":"iss","id":25544,"latitude":-50.590582138773,"longitude":80.193217542473,"altitude":438.4586306272,"velocity":27532.817573839,"visibility":"daylight","footprint":4600.2051664905,"timestamp":1617220800000,"daynum":21158420.833333,"solar_lat":-82.250372154661,"solar_lon":5.3591847109406,"units":"kilometers"},{"name":"iss","id":25544,"latitude":-20.424556681148,"longitude":177.42112664838,"altitude":424.73051126202,"velocity":27566.021149195,"visibility":"eclipsed","footprint":4531.4523014604,"timestamp":1617307200000,"daynum":21159420.833333,"solar_lat":7.8059841377959,"solar_lon":51.914716427212,"units":"kilometers"},{"name":"iss","id":25544,"latitude":35.927940326466,"longitude":-47.487196289254,"altitude":423.16651705648,"velocity":27582.876616816,"visibility":"daylight","footprint":4523.5383209653,"timestamp":1617393600000,"daynum":21160420.833333,"solar_lat":70.983691533699,"solar_lon":343.76245071149,"units":"kilometers"},{"name":"iss","id":25544,"latitude":41.46745860517,"longitude":38.243854770931,"altitude":423.76809806651,"velocity":27584.889689373,"visibility":"daylight","footprint":4526.5843851221,"timestamp":1617480000000,"daynum":21161420.833333,"solar_lat":-23.343418341288,"solar_lon":58.932251778223,"units":"kilometers"},{"name":"iss","id":25544,"latitude":-13.464529225306,"longitude":170.22057884846,"altitude":423.08400564378,"velocity":27569.512918492,"visibility":"daylight","footprint":4523.1203348423,"timestamp":1617566400000,"daynum":21162420.833333,"solar_lat":-67.75293919653,"solar_lon":349.69067331527,"units":"kilometers"},{"name":"iss","id":25544,"latitude":-51.774923325885,"longitude":-84.360196158665,"altitude":438.67349940256,"velocity":27532.901480421,"visibility":"eclipsed","footprint":4601.2712690956,"timestamp":1617652800000,"daynum":21163420.833333,"solar_lat":25.919239763427,"solar_lon":67.319308319804,"units":"kilometers"},{"name":"iss","id":25544,"latitude":-11.165945314826,"longitude":23.817880651009,"altitude":421.86897102143,"velocity":27573.652891405,"visibility":"daylight","footprint":4516.9597500014,"timestamp":1617739200000,"daynum":21164420.833333,"solar_lat":53.108768763138,"solar_lon":351.93971967576,"units":"kilometers"},{"name":"iss","id":25544,"latitude":43.070707732109,"longitude":154.41763922685,"altitude":425.24244662652,"velocity":27580.225715541,"visibility":"daylight","footprint":4534.0390869667,"timestamp":1617825600000,"daynum":21165420.833333,"solar_lat":-39.641206777308,"solar_lon":74.080107494113,"units":"kilometers"},{"name":"iss","id":25544,"latitude":33.994551525605,"longitude":-119.26494897694,"altitude":421.38788048895,"velocity":27588.596317788,"visibility":"eclipsed","footprint":4514.5176442824,"timestamp":1617912000000,"daynum":21166420.833333,"solar_lat":-51.515526079506,"solar_lon":0.17855442455081,"units":"kilometers"},{"name":"iss","id":25544,"latitude":-22.626114209041,"longitude":16.4346981696,"altitude":426.89845666182,"velocity":27558.469116656,"visibility":"daylight","footprint":4542.394506441,"timestamp":1617998400000,"daynum":21167420.833333,"solar_lat":44.25239147296,"solar_lon":81.96176336864,"units":"kilometers"}]
+      </div>
+      <div>Timestamp matched from filter and response for : 1617134400000
+      </div>
+      <div>Timestamp matched from filter and response for : 1617220800000
+      </div>
+      <div>Timestamp matched from filter and response for : 1617307200000
+      </div>
+      <div>Timestamp matched from filter and response for : 1617393600000
+      </div>
+      <div>Timestamp matched from filter and response for : 1617480000000
+      </div>
+      <div>Timestamp matched from filter and response for : 1617566400000
+      </div>
+      <div>Timestamp matched from filter and response for : 1617652800000
+      </div>
+      <div>Timestamp matched from filter and response for : 1617739200000
+      </div>
+      <div>Timestamp matched from filter and response for : 1617825600000
+      </div>
+      <div>Timestamp matched from filter and response for : 1617912000000
+      </div>
+      <div>Timestamp matched from filter and response for : 1617998400000
+      </div>
+      <div>Total Satellites found 11
+      </div>
+      <div>name iss
+      </div>
+      <div>Id 25544
+      </div>
+      <div>latitude -4.028997
+      </div>
+      <div>longitude -36.59776
+      </div>
+      <div>altitude420.35028
+      </div>
+      <div>velocity27578.277
+      </div>
+      <div>visibility daylight
+      </div>
+      <div>footprint4509.245
+      </div>
+      <div>timestamp1617134400000
+      </div>
+      <div>daynum 2.115742E7
+      </div>
+      <div>solar_lat-6.712708
+      </div>
+      <div>solar_lon43.338455
+      </div>
+      <div>units kilometers
+      </div>
+      <div>name iss
+      </div>
+      <div>Id 25544
+      </div>
+      <div>latitude -50.590584
+      </div>
+      <div>longitude 80.193214
+      </div>
+      <div>altitude438.45862
+      </div>
+      <div>velocity27532.818
+      </div>
+      <div>visibility daylight
+      </div>
+      <div>footprint4600.205
+      </div>
+      <div>timestamp1617220800000
+      </div>
+      <div>daynum 2.115842E7
+      </div>
+      <div>solar_lat-82.250374
+      </div>
+      <div>solar_lon5.3591847
+      </div>
+      <div>units kilometers
+      </div>
+      <div>name iss
+      </div>
+      <div>Id 25544
+      </div>
+      <div>latitude -20.424557
+      </div>
+      <div>longitude 177.42113
+      </div>
+      <div>altitude424.7305
+      </div>
+      <div>velocity27566.021
+      </div>
+      <div>visibility eclipsed
+      </div>
+      <div>footprint4531.452
+      </div>
+      <div>timestamp1617307200000
+      </div>
+      <div>daynum 2.115942E7
+      </div>
+      <div>solar_lat7.805984
+      </div>
+      <div>solar_lon51.914715
+      </div>
+      <div>units kilometers
+      </div>
+      <div>name iss
+      </div>
+      <div>Id 25544
+      </div>
+      <div>latitude 35.92794
+      </div>
+      <div>longitude -47.487198
+      </div>
+      <div>altitude423.1665
+      </div>
+      <div>velocity27582.877
+      </div>
+      <div>visibility daylight
+      </div>
+      <div>footprint4523.538
+      </div>
+      <div>timestamp1617393600000
+      </div>
+      <div>daynum 2.116042E7
+      </div>
+      <div>solar_lat70.98369
+      </div>
+      <div>solar_lon343.76245
+      </div>
+      <div>units kilometers
+      </div>
+      <div>name iss
+      </div>
+      <div>Id 25544
+      </div>
+      <div>latitude 41.467457
+      </div>
+      <div>longitude 38.243855
+      </div>
+      <div>altitude423.7681
+      </div>
+      <div>velocity27584.89
+      </div>
+      <div>visibility daylight
+      </div>
+      <div>footprint4526.5845
+      </div>
+      <div>timestamp1617480000000
+      </div>
+      <div>daynum 2.116142E7
+      </div>
+      <div>solar_lat-23.343418
+      </div>
+      <div>solar_lon58.93225
+      </div>
+      <div>units kilometers
+      </div>
+      <div>name iss
+      </div>
+      <div>Id 25544
+      </div>
+      <div>latitude -13.464529
+      </div>
+      <div>longitude 170.22058
+      </div>
+      <div>altitude423.084
+      </div>
+      <div>velocity27569.514
+      </div>
+      <div>visibility daylight
+      </div>
+      <div>footprint4523.12
+      </div>
+      <div>timestamp1617566400000
+      </div>
+      <div>daynum 2.116242E7
+      </div>
+      <div>solar_lat-67.75294
+      </div>
+      <div>solar_lon349.69067
+      </div>
+      <div>units kilometers
+      </div>
+      <div>name iss
+      </div>
+      <div>Id 25544
+      </div>
+      <div>latitude -51.774925
+      </div>
+      <div>longitude -84.3602
+      </div>
+      <div>altitude438.6735
+      </div>
+      <div>velocity27532.902
+      </div>
+      <div>visibility eclipsed
+      </div>
+      <div>footprint4601.2715
+      </div>
+      <div>timestamp1617652800000
+      </div>
+      <div>daynum 2.116342E7
+      </div>
+      <div>solar_lat25.919239
+      </div>
+      <div>solar_lon67.319305
+      </div>
+      <div>units kilometers
+      </div>
+      <div>name iss
+      </div>
+      <div>Id 25544
+      </div>
+      <div>latitude -11.165945
+      </div>
+      <div>longitude 23.81788
+      </div>
+      <div>altitude421.86896
+      </div>
+      <div>velocity27573.652
+      </div>
+      <div>visibility daylight
+      </div>
+      <div>footprint4516.96
+      </div>
+      <div>timestamp1617739200000
+      </div>
+      <div>daynum 2.116442E7
+      </div>
+      <div>solar_lat53.10877
+      </div>
+      <div>solar_lon351.93973
+      </div>
+      <div>units kilometers
+      </div>
+      <div>name iss
+      </div>
+      <div>Id 25544
+      </div>
+      <div>latitude 43.07071
+      </div>
+      <div>longitude 154.41763
+      </div>
+      <div>altitude425.24243
+      </div>
+      <div>velocity27580.227
+      </div>
+      <div>visibility daylight
+      </div>
+      <div>footprint4534.039
+      </div>
+      <div>timestamp1617825600000
+      </div>
+      <div>daynum 2.116542E7
+      </div>
+      <div>solar_lat-39.64121
+      </div>
+      <div>solar_lon74.08011
+      </div>
+      <div>units kilometers
+      </div>
+      <div>name iss
+      </div>
+      <div>Id 25544
+      </div>
+      <div>latitude 33.994553
+      </div>
+      <div>longitude -119.264946
+      </div>
+      <div>altitude421.38788
+      </div>
+      <div>velocity27588.596
+      </div>
+      <div>visibility eclipsed
+      </div>
+      <div>footprint4514.5176
+      </div>
+      <div>timestamp1617912000000
+      </div>
+      <div>daynum 2.116642E7
+      </div>
+      <div>solar_lat-51.515526
+      </div>
+      <div>solar_lon0.17855443
+      </div>
+      <div>units kilometers
+      </div>
+      <div>name iss
+      </div>
+      <div>Id 25544
+      </div>
+      <div>latitude -22.626114
+      </div>
+      <div>longitude 16.434698
+      </div>
+      <div>altitude426.89847
+      </div>
+      <div>velocity27558.469
+      </div>
+      <div>visibility daylight
+      </div>
+      <div>footprint4542.3945
+      </div>
+      <div>timestamp1617998400000
+      </div>
+      <div>daynum 2.116742E7
+      </div>
+      <div>solar_lat44.25239
+      </div>
+      <div>solar_lon81.96176
+      </div>
+      <div>units kilometers
+      </div>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="354"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">To validate we can get satellite TLE information</p>
+            <p class="text-sm">
+              <span>11:55:24 AM</span> / <span>00:00:08:039</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">To validate we can get satellite TLE information</h5>
+<span class='badge badge-success'>07.27.2021 11:55:24</span>
+<span class='badge badge-danger'>07.27.2021 11:55:32</span>
+<span class='badge badge-default'>00:00:08:039</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=354</span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="355"><span class="badge log fail-bg mr-2">Fail</span>To validate we can get satellite TLE information by satellite ID</div>
+      </div>
+    </div>
+        <div class="scenario_outline ">
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="356"><span class="badge log pass-bg mr-2">Pass</span>To validate we can get satellite TLE information by satellite ID</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>When Test environment is set</span>
+      <div>Base URi https://api.wheretheiss.at/v1/
+      </div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And check if health ping is successful</span>
+      <div><table class='markup-table table '><tr><td>path</td><td>/satellites</td></tr><tr><td>HEADER-Content-Type</td><td>application/json</td></tr><tr><td>HEADER-Accept</td><td>application/json</td></tr><tr><td>httpCode</td><td>200</td></tr></table>
+      </div>
+      <div>EndPoint /satellites
+      </div>
+      <div>Response [{"name":"iss","id":25544}]
+      </div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then check if tle information is returned for a satellite</span>
+      <div><table class='markup-table table '><tr><td>path</td><td>/satellites/{ID}/tles</td></tr><tr><td>HEADER-Content-Type</td><td>application/json</td></tr><tr><td>HEADER-Accept</td><td>application/json</td></tr><tr><td>httpCode</td><td>200</td></tr><tr><td>pathParam</td><td>ID</td></tr><tr><td>ID</td><td>25544</td></tr><tr><td>ErrorScenario</td><td>false</td></tr><tr><td>ErrorMessage</td><td></td></tr></table>
+      </div>
+      <div>EndPoint /satellites/{ID}/tles
+      </div>
+      <div>Response {"requested_timestamp":1627372527,"tle_timestamp":1627275931,"id":"25544","name":"iss","header":"ISS (ZARYA)","line1":"1 25544U 98067A   21207.21215938  .00002838  00000-0  59904-4 0  9995","line2":"2 25544  51.6425 149.7400 0001282 199.9245 305.2594 15.48867083294645"}
+      </div>
+      <div>requested_timestamp 1627372527
+      </div>
+      <div>tle_timestamp1627275931
+      </div>
+      <div>id 25544
+      </div>
+      <div>nameiss
+      </div>
+      <div>line11 25544U 98067A   21207.21215938  .00002838  00000-0  59904-4 0  9995
+      </div>
+      <div>line22 25544  51.6425 149.7400 0001282 199.9245 305.2594 15.48867083294645
+      </div>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="372"><span class="badge log pass-bg mr-2">Pass</span>To validate we can get satellite TLE information by satellite ID</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>When Test environment is set</span>
+      <div>Base URi https://api.wheretheiss.at/v1/
+      </div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And check if health ping is successful</span>
+      <div><table class='markup-table table '><tr><td>path</td><td>/satellites</td></tr><tr><td>HEADER-Content-Type</td><td>application/json</td></tr><tr><td>HEADER-Accept</td><td>application/json</td></tr><tr><td>httpCode</td><td>200</td></tr></table>
+      </div>
+      <div>EndPoint /satellites
+      </div>
+      <div>Response [{"name":"iss","id":25544}]
+      </div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then check if tle information is returned for a satellite</span>
+      <div><table class='markup-table table '><tr><td>path</td><td>/satellites/{ID}/tles</td></tr><tr><td>HEADER-Content-Type</td><td>application/json</td></tr><tr><td>HEADER-Accept</td><td>application/json</td></tr><tr><td>httpCode</td><td>404</td></tr><tr><td>pathParam</td><td>ID</td></tr><tr><td>ID</td><td>25545</td></tr><tr><td>ErrorScenario</td><td>true</td></tr><tr><td>ErrorMessage</td><td>satellite not found</td></tr></table>
+      </div>
+      <div>EndPoint /satellites/{ID}/tles
+      </div>
+      <div>Response {"error":"satellite not found","status":404}
+      </div>
+      <div>Faliure scenario handled 
+      </div>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="383"><span class="badge log fail-bg mr-2">Fail</span>To validate we can get satellite TLE information by satellite ID</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 ">
+                  <div class="step pass-bg">
+                    <span>When Test environment is set</span>
+      <div>Base URi https://api.wheretheiss.at/v1/
+      </div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And check if health ping is successful</span>
+      <div><table class='markup-table table '><tr><td>path</td><td>/satellites</td></tr><tr><td>HEADER-Content-Type</td><td>application/json</td></tr><tr><td>HEADER-Accept</td><td>application/json</td></tr><tr><td>httpCode</td><td>200</td></tr></table>
+      </div>
+      <div>EndPoint /satellites
+      </div>
+      <div>Response [{"name":"iss","id":25544}]
+      </div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step fail-bg">
+                    <span>Then check if tle information is returned for a satellite</span>
+      <div><table class='markup-table table '><tr><td>path</td><td>/satellites/{ID}/tles</td></tr><tr><td>HEADER-Content-Type</td><td>application/json</td></tr><tr><td>HEADER-Accept</td><td>application/json</td></tr><tr><td>httpCode</td><td>404</td></tr><tr><td>pathParam</td><td>ID</td></tr><tr><td>ID</td><td>25544*</td></tr><tr><td>ErrorScenario</td><td>true</td></tr><tr><td>ErrorMessage</td><td>satellite not found</td></tr></table>
+      </div>
+      <div>EndPoint /satellites/{ID}/tles
+      </div>
+      <div>Response {"requested_timestamp":1627372532,"tle_timestamp":1627275931,"id":"25544*","name":"iss","header":"ISS (ZARYA)","line1":"1 25544U 98067A   21207.21215938  .00002838  00000-0  59904-4 0  9995","line2":"2 25544  51.6425 149.7400 0001282 199.9245 305.2594 15.48867083294645"}
+      </div>
+      <div>
+        <textarea disabled class="code-block">java.lang.AssertionError: 1 expectation failed.
+Expected status code <404> but was <200>.
+
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:72)
+	at org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:59)
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:84)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:59)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:263)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:493)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:674)
+	at jdk.internal.reflect.GeneratedMethodAccessor154.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:193)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:61)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:126)
+	at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:134)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
+	at io.restassured.internal.ValidatableResponseImpl.super$2$statusCode(ValidatableResponseImpl.groovy)
+	at jdk.internal.reflect.GeneratedMethodAccessor153.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1262)
+	at org.codehaus.groovy.runtime.ScriptBytecodeAdapter.invokeMethodOnSuperN(ScriptBytecodeAdapter.java:144)
+	at io.restassured.internal.ValidatableResponseImpl.statusCode(ValidatableResponseImpl.groovy:142)
+	at io.restassured.internal.ValidatableResponseImpl.statusCode(ValidatableResponseImpl.groovy)
+	at stepHelper.commonSteps.validateResponseCode(commonSteps.java:92)
+	at com.automation.iss.glues.stepBuilder.stepDefinitions.getSatelliteTLEInformationD(stepDefinitions.java:183)
+	at ✽.check if tle information is returned for a satellite(file:///Users/mitramac/AssignmentGITRepoISS/wheretheissAPITesting/src/test/resources/features/3_GETSatelliteTLEInformation.feature:15)
+</textarea>
+      
+      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="393"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">To validate we are blocked when we try to use incorrect methods or wrong pathnames</p>
+            <p class="text-sm">
+              <span>11:55:32 AM</span> / <span>00:00:10:078</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">To validate we are blocked when we try to use incorrect methods or wrong pathnames</h5>
+<span class='badge badge-success'>07.27.2021 11:55:32</span>
+<span class='badge badge-danger'>07.27.2021 11:55:42</span>
+<span class='badge badge-default'>00:00:10:078</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=393</span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="394"><span class="badge log pass-bg mr-2">Pass</span>To validate if we can get all matching satellites tle information</div>
+      </div>
+    </div>
+        <div class="scenario_outline collapse">
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="395"><span class="badge log pass-bg mr-2">Pass</span>To validate if we can get all matching satellites tle information</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>When Test environment is set</span>
+      <div>Base URi https://api.wheretheiss.at/v1/
+      </div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And check if health ping is successful</span>
+      <div><table class='markup-table table '><tr><td>path</td><td>/satellites</td></tr><tr><td>HEADER-Content-Type</td><td>application/json</td></tr><tr><td>HEADER-Accept</td><td>application/json</td></tr><tr><td>httpCode</td><td>200</td></tr></table>
+      </div>
+      <div>EndPoint /satellites
+      </div>
+      <div>Response [{"name":"iss","id":25544}]
+      </div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then check for not allowed methods satellite</span>
+      <div><table class='markup-table table '><tr><td>path</td><td>satellites/25544/tless</td></tr><tr><td>HEADER-Content-Type</td><td>application/json</td></tr><tr><td>HEADER-Accept</td><td>application/json</td></tr><tr><td>httpCode</td><td>404</td></tr><tr><td>Method</td><td>GET</td></tr><tr><td>pathParam</td><td>ID</td></tr><tr><td>ID</td><td>25544</td></tr><tr><td>ErrorScenario</td><td>true</td></tr><tr><td>ErrorMessage</td><td>Invalid controller specified (satellites_tless)</td></tr></table>
+      </div>
+      <div>EndPoint satellites/25544/tless
+      </div>
+      <div>Response {"error":"Invalid controller specified (satellites_tless)","status":404}
+      </div>
+      <div>Faliure scenario handled 
+      </div>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="406"><span class="badge log pass-bg mr-2">Pass</span>To validate if we can get all matching satellites tle information</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>When Test environment is set</span>
+      <div>Base URi https://api.wheretheiss.at/v1/
+      </div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And check if health ping is successful</span>
+      <div><table class='markup-table table '><tr><td>path</td><td>/satellites</td></tr><tr><td>HEADER-Content-Type</td><td>application/json</td></tr><tr><td>HEADER-Accept</td><td>application/json</td></tr><tr><td>httpCode</td><td>200</td></tr></table>
+      </div>
+      <div>EndPoint /satellites
+      </div>
+      <div>Response [{"name":"iss","id":25544}]
+      </div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then check for not allowed methods satellite</span>
+      <div><table class='markup-table table '><tr><td>path</td><td>satellites/25544</td></tr><tr><td>HEADER-Content-Type</td><td>application/json</td></tr><tr><td>HEADER-Accept</td><td>application/json</td></tr><tr><td>httpCode</td><td>401</td></tr><tr><td>Method</td><td>PUT</td></tr><tr><td>pathParam</td><td>ID</td></tr><tr><td>ID</td><td>25544</td></tr><tr><td>ErrorScenario</td><td>true</td></tr><tr><td>ErrorMessage</td><td>authorization required</td></tr></table>
+      </div>
+      <div>EndPoint satellites/25544
+      </div>
+      <div>Response {"error":"authorization required","status":401}
+      </div>
+      <div>Faliure scenario handled 
+      </div>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="417"><span class="badge log pass-bg mr-2">Pass</span>To validate if we can get all matching satellites tle information</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>When Test environment is set</span>
+      <div>Base URi https://api.wheretheiss.at/v1/
+      </div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And check if health ping is successful</span>
+      <div><table class='markup-table table '><tr><td>path</td><td>/satellites</td></tr><tr><td>HEADER-Content-Type</td><td>application/json</td></tr><tr><td>HEADER-Accept</td><td>application/json</td></tr><tr><td>httpCode</td><td>200</td></tr></table>
+      </div>
+      <div>EndPoint /satellites
+      </div>
+      <div>Response [{"name":"iss","id":25544}]
+      </div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then check for not allowed methods satellite</span>
+      <div><table class='markup-table table '><tr><td>path</td><td>satellites/25544</td></tr><tr><td>HEADER-Content-Type</td><td>application/json</td></tr><tr><td>HEADER-Accept</td><td>application/json</td></tr><tr><td>httpCode</td><td>401</td></tr><tr><td>Method</td><td>DELETE</td></tr><tr><td>pathParam</td><td>ID</td></tr><tr><td>ID</td><td>25544</td></tr><tr><td>ErrorScenario</td><td>true</td></tr><tr><td>ErrorMessage</td><td>authorization required</td></tr></table>
+      </div>
+      <div>EndPoint satellites/25544
+      </div>
+      <div>Response {"error":"authorization required","status":401}
+      </div>
+      <div>Faliure scenario handled 
+      </div>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="428"><span class="badge log pass-bg mr-2">Pass</span>To validate if we can get all matching satellites tle information</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>When Test environment is set</span>
+      <div>Base URi https://api.wheretheiss.at/v1/
+      </div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And check if health ping is successful</span>
+      <div><table class='markup-table table '><tr><td>path</td><td>/satellites</td></tr><tr><td>HEADER-Content-Type</td><td>application/json</td></tr><tr><td>HEADER-Accept</td><td>application/json</td></tr><tr><td>httpCode</td><td>200</td></tr></table>
+      </div>
+      <div>EndPoint /satellites
+      </div>
+      <div>Response [{"name":"iss","id":25544}]
+      </div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then check for not allowed methods satellite</span>
+      <div><table class='markup-table table '><tr><td>path</td><td>satellites/25544/positions?timestamps=1627322480,1627328617&units=miles</td></tr><tr><td>HEADER-Content-Type</td><td>application/json</td></tr><tr><td>HEADER-Accept</td><td>application/json</td></tr><tr><td>httpCode</td><td>401</td></tr><tr><td>Method</td><td>POST</td></tr><tr><td>pathParam</td><td>ID</td></tr><tr><td>ID</td><td>25544</td></tr><tr><td>ErrorScenario</td><td>true</td></tr><tr><td>ErrorMessage</td><td>authorization required</td></tr></table>
+      </div>
+      <div>EndPoint satellites/25544/positions?timestamps=1627322480,1627328617&units=miles
+      </div>
+      <div>Response {"error":"authorization required","status":401}
+      </div>
+      <div>Faliure scenario handled 
+      </div>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+<div class="test-content scrollable">
+<div class="test-content-tools">
+<ul><li><a class="back-to-test" href="#"><i class="fa fa-arrow-left"></i></a></li></ul>
+</div>
+<div class="test-content-detail"><div class="detail-body"></div></div>
+</div></div>
+<div class="test-wrapper row view exception-view attributes-view">
+<div class="test-list">
+<div class="test-list-tools">
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Exception</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">1</span></a></li></ul>
+</div>
+<div class="test-list-wrapper scrollable">
+<ul class="test-list-item">
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">java.lang.AssertionError</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>java.lang.AssertionError</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>11:55:09 AM</td>
+<td>
+<a href="#" class="linked" test-id='34' id='43'>Then check if satellites are returned based on units and timestamps</a>
+<div class="">
+<span class="badge badge-default">To validate Get satellite position details for a specific satellite ID.To validate if we can get specific satellite position details by timestamps and units and also its schema is validated.Then check if satellites are returned based on units and timestamps</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>11:55:31 AM</td>
+<td>
+<a href="#" class="linked" test-id='354' id='390'>Then check if tle information is returned for a satellite</a>
+<div class="">
+<span class="badge badge-default">To validate we can get satellite TLE information.To validate we can get satellite TLE information by satellite ID.Then check if tle information is returned for a satellite</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="test-content scrollable">
+<div class="test-content-detail">
+<div class="detail-body"></div>
+</div>
+</div>
+</div><div class="test-wrapper row view category-view attributes-view">
+<div class="test-list">
+<div class="test-list-tools">
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Category</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">1</span></a></li></ul>
+</div>
+<div class="test-list-wrapper scrollable">
+<ul class="test-list-item">
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>15</span>
+<span class='badge log badge-danger'>4</span>
+</span>
+<p class="name">@Regression</p>
+<p class="duration text-sm">19 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@Regression</h4>
+<span status="pass" class='badge log pass-bg'>15 passed</span>
+<span status="fail" class='badge log badge-danger'>4 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>11:55:02 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='2'>To perform health check of the application</a>
+<div class="">
+<span class="badge badge-default">To perform health check of the application.To perform health check of the application</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>11:55:05 AM</td>
+<td>
+<a href="#" class="linked" test-id='9' id='10'>To validate if we can get specific satellite details by ID and also its schema is validated</a>
+<div class="">
+<span class="badge badge-default">To validate Get satellite details for a specific satellite ID.To validate if we can get specific satellite details by ID and also its schema is validated</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>11:55:05 AM</td>
+<td>
+<a href="#" class="linked" test-id='9' id='11'>To validate if we can get specific satellite details by ID and also its schema is validated</a>
+<div class="">
+<span class="badge badge-default">To validate Get satellite details for a specific satellite ID.To validate if we can get specific satellite details by ID and also its schema is validated</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>11:55:08 AM</td>
+<td>
+<a href="#" class="linked" test-id='34' id='35'>To validate if we can get specific satellite position details by timestamps and units and also its schema is validated</a>
+<div class="">
+<span class="badge badge-default">To validate Get satellite position details for a specific satellite ID.To validate if we can get specific satellite position details by timestamps and units and also its schema is validated</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>11:55:08 AM</td>
+<td>
+<a href="#" class="linked" test-id='34' id='36'>To validate if we can get specific satellite position details by timestamps and units and also its schema is validated</a>
+<div class="">
+<span class="badge badge-default">To validate Get satellite position details for a specific satellite ID.To validate if we can get specific satellite position details by timestamps and units and also its schema is validated</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>11:55:10 AM</td>
+<td>
+<a href="#" class="linked" test-id='34' id='56'>To validate if we can get specific satellite position details by timestamps and units and also its schema is validated</a>
+<div class="">
+<span class="badge badge-default">To validate Get satellite position details for a specific satellite ID.To validate if we can get specific satellite position details by timestamps and units and also its schema is validated</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>11:55:13 AM</td>
+<td>
+<a href="#" class="linked" test-id='34' id='96'>To validate if we can get specific satellite position details by timestamps and units and also its schema is validated</a>
+<div class="">
+<span class="badge badge-default">To validate Get satellite position details for a specific satellite ID.To validate if we can get specific satellite position details by timestamps and units and also its schema is validated</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>11:55:16 AM</td>
+<td>
+<a href="#" class="linked" test-id='34' id='136'>To validate if we can get specific satellite position details by timestamps and units and also its schema is validated</a>
+<div class="">
+<span class="badge badge-default">To validate Get satellite position details for a specific satellite ID.To validate if we can get specific satellite position details by timestamps and units and also its schema is validated</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>11:55:19 AM</td>
+<td>
+<a href="#" class="linked" test-id='34' id='176'>To validate if we can get specific satellite position details by timestamps and units and also its schema is validated</a>
+<div class="">
+<span class="badge badge-default">To validate Get satellite position details for a specific satellite ID.To validate if we can get specific satellite position details by timestamps and units and also its schema is validated</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>11:55:21 AM</td>
+<td>
+<a href="#" class="linked" test-id='34' id='188'>To validate if we can get specific satellite position details by timestamps and units and also its schema is validated</a>
+<div class="">
+<span class="badge badge-default">To validate Get satellite position details for a specific satellite ID.To validate if we can get specific satellite position details by timestamps and units and also its schema is validated</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>11:55:24 AM</td>
+<td>
+<a href="#" class="linked" test-id='354' id='355'>To validate we can get satellite TLE information by satellite ID</a>
+<div class="">
+<span class="badge badge-default">To validate we can get satellite TLE information.To validate we can get satellite TLE information by satellite ID</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>11:55:24 AM</td>
+<td>
+<a href="#" class="linked" test-id='354' id='356'>To validate we can get satellite TLE information by satellite ID</a>
+<div class="">
+<span class="badge badge-default">To validate we can get satellite TLE information.To validate we can get satellite TLE information by satellite ID</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>11:55:27 AM</td>
+<td>
+<a href="#" class="linked" test-id='354' id='372'>To validate we can get satellite TLE information by satellite ID</a>
+<div class="">
+<span class="badge badge-default">To validate we can get satellite TLE information.To validate we can get satellite TLE information by satellite ID</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>11:55:29 AM</td>
+<td>
+<a href="#" class="linked" test-id='354' id='383'>To validate we can get satellite TLE information by satellite ID</a>
+<div class="">
+<span class="badge badge-default">To validate we can get satellite TLE information.To validate we can get satellite TLE information by satellite ID</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>11:55:32 AM</td>
+<td>
+<a href="#" class="linked" test-id='393' id='394'>To validate if we can get all matching satellites tle information</a>
+<div class="">
+<span class="badge badge-default">To validate we are blocked when we try to use incorrect methods or wrong pathnames.To validate if we can get all matching satellites tle information</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>11:55:32 AM</td>
+<td>
+<a href="#" class="linked" test-id='393' id='395'>To validate if we can get all matching satellites tle information</a>
+<div class="">
+<span class="badge badge-default">To validate we are blocked when we try to use incorrect methods or wrong pathnames.To validate if we can get all matching satellites tle information</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>11:55:34 AM</td>
+<td>
+<a href="#" class="linked" test-id='393' id='406'>To validate if we can get all matching satellites tle information</a>
+<div class="">
+<span class="badge badge-default">To validate we are blocked when we try to use incorrect methods or wrong pathnames.To validate if we can get all matching satellites tle information</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>11:55:37 AM</td>
+<td>
+<a href="#" class="linked" test-id='393' id='417'>To validate if we can get all matching satellites tle information</a>
+<div class="">
+<span class="badge badge-default">To validate we are blocked when we try to use incorrect methods or wrong pathnames.To validate if we can get all matching satellites tle information</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>11:55:39 AM</td>
+<td>
+<a href="#" class="linked" test-id='393' id='428'>To validate if we can get all matching satellites tle information</a>
+<div class="">
+<span class="badge badge-default">To validate we are blocked when we try to use incorrect methods or wrong pathnames.To validate if we can get all matching satellites tle information</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="test-content scrollable">
+<div class="test-content-detail">
+<div class="detail-body"></div>
+</div>
+</div>
+</div><div class="container-fluid p-4 view dashboard-view">
+<div class="row">
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Started</p>
+<h3>Jul 27, 2021 11:55:01 AM</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Ended</p>
+<h3>Jul 27, 2021 11:55:42 AM</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-pass">Features Passed</p>
+<h3>3</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-fail">Features Failed</p>
+<h3>2</h3>
+</div></div>
+</div>
+</div>
+<div class="row">
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Features</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='parent-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='60%'>
+<b>3</b> features passed
+</small>
+</div>
+<div>
+<small data-tooltip='40%'><b>2</b> features failed,
+<b>0</b> skipped, <b data-tooltip='0%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Scenarios</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='child-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='86%'><b>13</b> scenarios passed</small></div>
+<div>
+<small data-tooltip='13%'><b>2</b> scenarios failed,
+<b>0</b> skipped, <b data-tooltip='%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Steps</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='grandchild-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='95%'><b>42</b> steps passed</small></div>
+<div>
+<small data-tooltip='4%'><b>2</b> steps failed,
+<b>0</b> skipped, <b data-tooltip='%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><div class="col-md-12">
+<div class="card"><div class="card-header"><p>Timeline</p></div>
+<div class="card-body pt-0"><div>
+<canvas id="timeline" height="120"></canvas>
+</div></div>
+</div>
+</div></div>
+<script>
+var timeline = {
+"To perform health check of the application":3.193,"To validate Get satellite details for a specific satellite ID":2.64,"To validate Get satellite position details for a specific satellite ID":16.347,"To validate we can get satellite TLE information":8.039,"To validate we are blocked when we try to use incorrect methods or wrong pathnames":10.078
+};
+</script>
+<div class="row">
+<div class="col-md-4 category-container">
+<div class="card">
+<div class="card-header"><p>Tags</p></div>
+<div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
+<thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead><tbody>
+<tr>
+<td>@Regression</td>
+<td>15</td>
+<td>4</td>
+<td>0</td>
+<td>0</td>
+<td>78.947%</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+</div>
+<script>
+var statusGroup = {
+parentCount: 5,
+passParent: 3,
+failParent: 2,
+warningParent: 0,
+skipParent: 0,
+childCount: 5,
+passChild: 13,
+failChild: 2,
+warningChild: 0,
+skipChild: 0,
+infoChild: 0,
+grandChildCount: 5,
+passGrandChild: 42,
+failGrandChild: 2,
+warningGrandChild: 0,
+skipGrandChild: 0,
+infoGrandChild: 0,
+eventsCount: 5,
+};
+</script>        </div>
+      </div>
+    </div>
+  </div>
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@14e9bb345ef7e2ed3a102f271d84e9f0267c88e7/spark/js/spark-script.js"></script>
+<script type="text/javascript"></script></body>
+</html>
